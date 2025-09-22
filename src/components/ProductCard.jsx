@@ -8,7 +8,7 @@ const ProductCard = ({ product, onAddToCart, onQuickView }) => {
     return <div className="product-card">No product data</div>;
   }
   const { 
-    id, name, price, discountPrice, discountPercent, ratingValue, ratingCount, isHot, colors, category, imageUrl } = product;
+    name, price, discountPrice, discountPercent, ratingValue, ratingCount, isHot, category, imageUrl } = product;
 
   return (
     <div className="product-card">

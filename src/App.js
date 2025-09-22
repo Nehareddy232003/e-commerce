@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './Header.jsx';
 import ProductGrid from './ProductGrid.jsx';
 import Cart from './components/Cart';
-import FilterPanel from './components/FilterPanel';
+// import FilterPanel from './components/FilterPanel';
 import Pagination from './components/Pagination';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
@@ -109,6 +109,8 @@ function App() {
     setCurrentPage(page);
   };
 
+  // Unused filterConfig - commented out to remove warnings
+  /*
   const filterConfig = [
     {
       title: 'Category',
@@ -163,6 +165,7 @@ function App() {
       value: filters.rating
     }
   ];
+  */
 
   return (
     <div className="App">
@@ -183,11 +186,7 @@ function App() {
                 <button className="shop-now-btn" onClick={() => handleFilterChange('brand', 'Adidas', true)}>SHOP NOW</button>
               </div>
               <div className="hero-image">
-<<<<<<< HEAD
                 <img src="image.png.png" alt="Adidas Running Sneakers" />
-=======
-                <img src="/image.png" alt="Adidas Running Sneakers" />
->>>>>>> d289cb8fc5f0b5063fdc511a0a42b1edeb9bd2ff
               </div>
             </div>
           </div>
