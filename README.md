@@ -4,7 +4,7 @@ A modern, fully responsive e-commerce web application built with React featuring
 
 ## 🌟 Live Demo
 
-**[View Live Application](https://nehareddy232003.github.io/e-commerce-new/)**
+**[View Live Application](https://nehareddy232003.github.io/e-commerce/)**
 
 ## 🌟 Features
 
@@ -155,7 +155,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Project Link: [https://github.com/Nehareddy232003/e-commerce](https://github.com/Nehareddy232003/e-commerce)
 
-Live Demo: [https://nehareddy232003.github.io/e-commerce-new/](https://nehareddy232003.github.io/e-commerce-new/)
+Live Demo: [https://nehareddy232003.github.io/e-commerce/](https://nehareddy232003.github.io/e-commerce/)
 
 ---
 
