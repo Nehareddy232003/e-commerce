@@ -1,0 +1,90 @@
+.filter-panel {
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.filter-group {
+  margin-bottom: 1.5rem;
+}
+
+.filter-group h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.range-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.range-group input {
+  flex: 1;
+}
+
+/* Mobile - Draggable sidebar */
+@media (max-width: 768px) {
+  .filter-panel {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transform: translateX(0);
+  }
+  
+  .filter-panel.mobile-open {
+    transform: translateX(300px);
+  }
+  
+  .filter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: none;
+  }
+  
+  .filter-overlay.show {
+    display: block;
+  }
+  
+  .filter-drag-handle {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 60px;
+    background: #007bff;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,41 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 7px;
+  margin:0.5rem;
+}
+
+.star {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.half {
+  color: #ffc107;
+}
+
+.rating-count {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.rating-small .star {
+  font-size: 0.875rem;
+}
+
+.rating-medium .star {
+  font-size: 1rem;
+}
+
+.rating-large .star {
+  font-size: 1.25rem;
+}
