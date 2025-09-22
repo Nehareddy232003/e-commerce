@@ -113,3 +113,7 @@ npm run build
 - **Slide Animation**: Smooth slide-in/out transitions
 - **Close Options**: X button, overlay click, or outside tap
 - **Full Filters**: All desktop filters available on mobile
+<<<<<<< HEAD
+=======
+
+>>>>>>> d289cb8fc5f0b5063fdc511a0a42b1edeb9bd2ff

@@ -183,7 +183,11 @@ function App() {
                 <button className="shop-now-btn" onClick={() => handleFilterChange('brand', 'Adidas', true)}>SHOP NOW</button>
               </div>
               <div className="hero-image">
+<<<<<<< HEAD
                 <img src="image.png.png" alt="Adidas Running Sneakers" />
+=======
+                <img src="/image.png" alt="Adidas Running Sneakers" />
+>>>>>>> d289cb8fc5f0b5063fdc511a0a42b1edeb9bd2ff
               </div>
             </div>
           </div>
