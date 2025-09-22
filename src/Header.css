@@ -1,0 +1,145 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.diamond-container {
+  background: #40BFFF;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 10px solid white;
+  border-radius: 16px;
+}
+
+.diamond-outer {
+  color: white;
+  position: absolute;
+  stroke-width: 4px;
+}
+
+.diamond-inner {
+  color: white;
+  position: absolute;
+  margin: 1px;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-container {
+  display: flex;
+  gap: 80px;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-container a:hover {
+  color: #007bff;
+}
+.cart-section{
+  display: flex;
+}
+.cart-info{
+  padding-left: 12px;
+  gap: 5px;
+}
+.cart-count{
+  padding-right: 5px;
+}
+/* Base header (desktop already good) */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  justify-content: space-between;
+}
+
+/* Hide the dropdown by default */
+.menu-toggle {
+  display: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .company-name {
+    font-size: 18px;
+  }
+
+  .diamond-container {
+    width: 28px;
+    height: 22px;
+    border-radius: 10px;
+    border: 6px solid white;
+  }
+
+  /* Hide nav on mobile */
+  .nav-container {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px; /* just below header */
+    right: 16px;
+    width: 150px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 999;
+    gap:5px
+  }
+
+  .nav-container a {
+    padding: 8px 12px;
+    display: block;
+    color: #333;
+  }
+
+  /* Show toggle button */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* When active, show menu */
+  .nav-container.active {
+    display: flex;
+  }
+
+  .cart-section {
+    margin-left: 10px;
+  }
+}
